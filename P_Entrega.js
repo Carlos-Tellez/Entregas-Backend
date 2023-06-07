@@ -1,7 +1,7 @@
 class Usuarios{
 
     constructor(nom,apell){
-        this.nombre = nom,
+        this.nombre = nom,s
         this.apellido = apell,
         this.libros = [],
         this.mascotas = []
@@ -25,15 +25,15 @@ class Usuarios{
     }
 
     addBook(titulo,autor){
-        let books = {
+        let libro = {
             titulo: titulo,
             autor: autor
         }
-        this.libros.push(books)
+        this.libros.push(libro)
     }
 
     getBookNames(){
-        return this.books.map(books => books.titulo)
+        return this.libros.map(libros => libros.titulo)
     }
 
 
@@ -47,7 +47,7 @@ p1.addBook("Cronicas de una Muerte Anunciada", "Gabriel Garcia Marquez")
 p1.addBook("El Alquimista", "Paulo Coelho")
 console.log(p1.getFullName())
 console.log(p1.countMascotas())
-console.log(p1.getBookNames)
+console.log(p1.getBookNames())
 
 const p2 = new  Usuarios("Santiago ","Torres")
 p2.addMascota("Gato")
@@ -58,4 +58,4 @@ p2.addBook("Salon 8", "Yokoy Kenji")
 p2.addBook("Once Minutos", "Paulo Coelho")
 console.log(p2.getFullName())
 console.log(p2.countMascotas())
-console.log(p2.getBookNames)
+console.log(p2.getBookNames())
